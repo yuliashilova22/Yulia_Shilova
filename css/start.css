@@ -1,0 +1,397 @@
+html { font-size: 10px; }
+h1 { margin: 0; }
+ul { list-style: none; }
+
+a { 
+  text-decoration: none;
+  color: #000; 
+}
+
+a:hover { color: #f14a58; }
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1300px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 6rem;
+}
+
+.logo-caption {
+  font: 700 3rem/4.1rem 'Open Sans', sans-serif;
+}
+
+.signup-and-bag {
+  line-height: 4.1rem;
+}
+
+.sign-up,
+.bag {
+  font: 400 1.2rem Roboto, sans-serif;
+}
+
+.flaticon-bag { 
+  margin-right: 1.5rem; 
+}
+
+.sign-up { margin-right: 5rem; }
+
+.nav-search-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6rem 2.5rem;
+} 
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 96rem;
+  padding-left: 0;
+}
+
+.nav-list__item a {
+  font: 700 1.3rem 'Open Sans', sans-serif;
+  text-transform: capitalize;
+}
+
+.product-search {
+  position: relative;
+  width: 11.8rem;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.product-search-input {
+  height: 3rem;
+}
+
+.product-search-input::-webkit-input-placeholder {
+  font: 700 1.2rem 'Open Sans', sans-serif;
+  color: #a8a8a8;
+}
+
+.product-search-input::-moz-placeholder {
+  font: 700 1.2rem 'Open Sans', sans-serif;
+  color: #a8a8a8;
+}
+
+.product-search-input:-ms-input-placeholder {
+  font: 700 1.2rem 'Open Sans', sans-serif;
+  color: #a8a8a8;
+}
+
+.product-search-input:-moz-placeholder {
+  font: 700 1.2rem 'Open Sans', sans-serif;
+  color: #a8a8a8;
+}
+
+.flaticon-search {
+  position: absolute;
+  right: 0;
+  bottom: 0.8rem;
+  color: #a9a8a8;
+}
+
+.promo-container {
+  display: flex;
+  justify-content: flex-start;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.promo {
+  position: relative;
+  width: 650px;
+  height: 384px;
+}
+
+.promo h2 {
+  margin-bottom: 0.6rem;
+  font: 700 2.8rem 'Open Sans', sans-serif;
+  color: #000;
+}
+
+.first-product { 
+  background: url('../img/nike-red.jpg') no-repeat;
+  border-right: 1px solid #e5e5e5;
+}
+.second-product { 
+  background: url('../img/caps-hats.jpg') no-repeat;
+}
+
+.first-product h2,
+.category-link {
+  position: absolute;
+  top: 6rem;
+  right: 10rem;
+}
+
+.category-link { text-align: center; }
+
+.discount {
+  font: italic 1.6rem 'Times New Roman', serif;
+  color: #757575;
+}
+
+.container { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 9rem 6rem; 
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.container h1 {
+  font: 700 5rem 'Open Sans', sans-serif;
+  color: #000;
+  margin-bottom: 2rem;
+}
+
+.offer-description {
+  margin-bottom: 6rem;
+  font: italic 1.6rem 'Times New Roman', serif;
+  color: #000;
+}
+
+.best-offer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.best-offer-item,
+.best-offer-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow-icon { 
+  font-size: 2rem; 
+  color: #f14a58;
+}
+
+.product-view {
+  width: 240px;
+  height: 340px;
+  margin: 3.5rem 0 4.5rem;
+}
+
+.first-item,
+.new-arrivals-first {
+  background: url('../img/skinny-jeans.jpg') no-repeat;
+}
+
+.second-item {
+  background: url('../img/levis-jeans.jpg') no-repeat;
+}
+
+.math-icon {
+  padding-bottom: 10rem;
+  font-size: 2rem;
+  color: #000;
+}
+
+.product-name {
+  margin-bottom: 2rem;
+  font: 700 1.4rem 'Roboto', sans-serif;
+}
+
+.product-price {
+  margin-bottom: 3.5rem;
+  font: 400 1.4rem 'Roboto', sans-serif;
+}
+
+.old-price {
+  font: 400 2.6rem Roboto, sans-serif;
+  color: #757575;
+}
+
+.old-price:before {
+  display: block;
+  content: '';
+  width: 11rem;
+  height: 0.1rem;
+  background-color: #f14a58;
+  transform: translate(-5px, 15px) rotate(-30deg);
+}
+
+.new-price {
+  margin: 1.2rem 0 7.8rem 14rem;
+  font: 700 3.4rem Roboto, sans-serif;
+  color: #000;
+}
+
+.best-offer-buy,
+.all-arrivals-button {
+  width: 34rem;
+  height: 7.5rem;
+  font: 700 2.4rem 'Open Sans', sans-serif;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+}
+
+.new-arrivals-second { background-image: url('../img/knitted-jumper.jpg'); }
+.new-arrivals-third { background-image: url('../img/jumper-in-rib.jpg'); }
+.new-arrivals-fourth { background-image: url('../img/patchwork-croche.jpg'); }
+
+.new-arrivals-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.new-arrivals-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-service { 
+  display: flex;
+  border-right: 1px solid #e5e5e5; 
+}
+
+.about-service,
+.contact-links {
+  width: 50%;
+  height: 45rem;
+  padding: 5.4rem 6rem;
+}
+
+.contact-container {
+  display: flex;
+}
+
+.useful-links {
+  width: 50%;
+}
+
+.useful-links h3,
+.contact-wrapper h3 {
+  display: block;
+  font: 700 1.6rem 'Open Sans', sans-serif;
+  color: #000;
+  margin-bottom: 4rem;
+}
+
+.question-list li {
+  font: 400 1.4rem Roboto, sans-serif;
+  margin-bottom: 2.5rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 7.5rem;
+}
+
+.flaticon-twitter {
+  color: #d7d7d7;
+  margin-right: 1rem;
+}
+
+.contact {
+  font: 400 1.4rem Roboto, sans-serif;
+}
+
+.contact-item { width: 50%; }
+
+.contact-item h3 {
+  margin-bottom: 1.5rem;
+}
+
+
+.contact-links p {
+  font: italic 1.6rem 'Times New Roman', serif;
+  color: #757575; 
+  margin-bottom: 4.5rem;
+  line-height: 3rem;
+}
+
+.flaticon-null {
+  font-size: 1.4rem;
+  color: #315295;
+}
+
+.flaticon-null:hover { color:  }
+
+.flaticon-tweet {
+  font-size: 1.4rem;
+  color: #4bb8f0;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links a { margin-right: 2.2rem; }
+
+.footer { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 6rem; 
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer pre{
+  color: #000;
+  font: 700 1.2rem Roboto, sans-serif;
+}
+
+.footer-links {
+  display: flex;
+  font: 700 1.2rem Roboto, sans-serif;
+}
+
+.footer-links li:not(:last-child) {
+  margin-right: 3.5rem;
+}
+
+
+.share {
+  font: 700 1.8rem 'Open Sans', sans-serif;
+  color: #000;
+  margin-right: 0.5rem;
+}
+
+.share-num:before {
+  position: absolute;
+  display: block;
+  top: 0.7rem;
+  left: -0.8rem; 
+  content: '';
+  border: 0.4rem solid transparent;
+  border-right: 0.4rem solid #f4f4f4;
+}
+
+.share-num {
+  position: relative;
+  font: 400 1.2rem Roboto, sans-serif;
+  color: #000;
+  background-color: #f4f4f4;
+  padding: 0.4rem 0.6rem;
+}
+
