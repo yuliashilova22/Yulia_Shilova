@@ -7,8 +7,6 @@ a {
   color: #000; 
 }
 
-a:hover { color: #f14a58; }
-
 *,
 *:before,
 *:after {
@@ -113,11 +111,11 @@ a:hover { color: #f14a58; }
 
 .promo {
   position: relative;
-  width: 650px;
+  width: 50%;
   height: 384px;
 }
 
-.promo h2 {
+.promo-caption {
   margin-bottom: 0.6rem;
   font: 700 2.8rem 'Open Sans', sans-serif;
   color: #000;
@@ -131,7 +129,7 @@ a:hover { color: #f14a58; }
   background: url('../img/caps-hats.jpg') no-repeat;
 }
 
-.first-product h2,
+.first-product .promo-caption,
 .category-link {
   position: absolute;
   top: 6rem;
@@ -186,9 +184,23 @@ a:hover { color: #f14a58; }
 }
 
 .product-view {
+  position: relative;
   width: 240px;
   height: 340px;
   margin: 3.5rem 0 4.5rem;
+}
+
+.product-view:hover:after {
+  position: absolute;
+  top: 0;
+  padding-top: 65%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  content: 'View item';
+  text-align: center;
+  font: 700 2.2rem 'Open Sans', sans-serif;
+  color: #f14a58;
 }
 
 .first-item,
@@ -236,14 +248,18 @@ a:hover { color: #f14a58; }
   color: #000;
 }
 
-.best-offer-buy,
-.all-arrivals-button {
+.frequent-button {
   width: 34rem;
   height: 7.5rem;
   font: 700 2.4rem 'Open Sans', sans-serif;
   color: #000;
   background-color: #fff;
   border: 1px solid #e5e5e5;
+}
+
+.frequent-button:hover {
+  color: #f14a58;
+  border-color: #f14a58;
 }
 
 .new-arrivals-second { background-image: url('../img/knitted-jumper.jpg'); }
@@ -294,6 +310,8 @@ a:hover { color: #f14a58; }
   font: 400 1.4rem Roboto, sans-serif;
   margin-bottom: 2.5rem;
 }
+
+.question-list li a:hover { text-decoration: underline; }
 
 .contact-links {
   display: flex;
